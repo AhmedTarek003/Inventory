@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  margin: 30px auto;
+}
+.form_container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+}
+.problem_box {
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.form_btn {
+  width: 30%;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 8px;
+  cursor: pointer;
+  font-size: 19px;
+  margin: 10px auto;
+}

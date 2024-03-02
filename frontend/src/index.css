@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,500;10..100,700&display=swap");
+:root {
+  --background-color: #e1f4ff;
+  --main-color: #0b81d6;
+  --secondary-color: #defdff;
+  --third-color: #1d1a39;
+  --form-color: rgba(87, 100, 116, 0.57);
+  --rat-color: #3e3e3e;
+  --red-color: #f91010;
+  --white-color: #fff;
+  --overlay-color: rgba(0, 0, 0, 0.6);
+  --green-color: #18faa8;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color) !important;
+  font-family: "Open Sans", sans-serif !important;
+  /* font-family: 'Imbue', serif; */
+}
+input,
+textarea,
+button,
+select {
+  border: none;
+}
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+}
+.page_title {
+  text-align: center;
+  margin: 30px 0;
+  font-family: "Imbue", serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.page_container {
+  display: flex;
+  gap: 20px;
+}
+.quantity-text {
+  color: white;
+  margin: 15px 0 2px;
+}
+.quantity-box {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+.quantity-box .qty {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  user-select: none;
+}
+.quantity .num {
+  width: 45px;
+  cursor: default;
+  font-weight: bold;
+}
+
+/* Query */
+@media (max-width: 991px) {
+  .quantity-box .qty {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}

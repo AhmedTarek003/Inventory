@@ -1,0 +1,126 @@
+.content {
+  flex: 10;
+  overflow-y: scroll;
+  height: calc(100vh - 80px);
+}
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+.content::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+.container {
+  padding: 15px;
+}
+.tabel_headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show {
+  font-size: 18px;
+  font-weight: 500;
+  flex: 1;
+}
+.show_num {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.options {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.add_btn {
+  background-color: black;
+  color: var(--white-color);
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+.search_bar {
+  width: 50%;
+}
+.search_bar_input {
+  width: 100%;
+  height: 35px;
+  padding: 8px;
+  border-radius: 15px;
+}
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.product_box {
+  border: 1px solid #ddd;
+  width: max-content;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+.product_image {
+  width: 230px;
+}
+.product_overlay_in,
+.product_overlay_out {
+  position: absolute;
+  background-color: var(--overlay-color);
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.product_overlay_in {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+}
+.product_overlay_out {
+  width: 100%;
+  height: 100%;
+  color: var(--red-color);
+
+  cursor: no-drop;
+}
+
+.product_box:hover .product_overlay_in {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+/* Query */
+@media (max-width: 450px) {
+  .tabel_headers {
+    flex-direction: column;
+  }
+  .options {
+    align-items: center;
+    margin-top: 10px;
+  }
+  .add_btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .search_bar {
+    width: 100%;
+  }
+}

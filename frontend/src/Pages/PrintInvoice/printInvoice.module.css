@@ -1,0 +1,54 @@
+.print_page {
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  padding: 10px;
+}
+.page_title {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Imbue", serif;
+  font-style: italic;
+}
+
+.info_item {
+  font-weight: 700;
+}
+.created {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.collect_price {
+  width: 20%;
+}
+.all_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3px 0;
+  font-weight: 700;
+}
+
+.print_btn {
+  margin: 30px auto;
+  padding: 6px 35px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .collect_price {
+    width: 80%;
+  }
+}

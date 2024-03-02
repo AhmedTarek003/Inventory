@@ -1,0 +1,91 @@
+.content {
+  flex: 10;
+  overflow-y: scroll;
+  height: calc(100vh - 80px);
+}
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+.content::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+.container {
+  padding: 15px;
+}
+.tabel_headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show {
+  font-size: 18px;
+  font-weight: 500;
+  flex: 1;
+}
+.show_num {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.options {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.add_btn {
+  background-color: black;
+  color: var(--white-color);
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+.search_bar {
+  width: 50%;
+}
+.search_bar_input {
+  width: 100%;
+  height: 35px;
+  padding: 8px;
+  border-radius: 15px;
+}
+.table_head {
+  background-color: #eee !important;
+  text-align: center;
+}
+.action_options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.action_icon {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+/* Query */
+@media (max-width: 450px) {
+  .tabel_headers {
+    flex-direction: column;
+  }
+  .options {
+    align-items: center;
+    margin-top: 10px;
+  }
+  .add_btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .search_bar {
+    width: 100%;
+  }
+}
