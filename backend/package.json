@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "19.4.0"
+  },
   "scripts": {
     "build": "npm i",
     "test": "echo \"Error: no test specified\" && exit 1",
